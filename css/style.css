@@ -2,3 +2,21 @@
   background-color: black;
   color: white;
 }
+
+/*body {
+  background-image: url("../img/background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}*/
+
+h1 {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.form-bottom {
+  position: absolute;
+  bottom: 90px;
+}
