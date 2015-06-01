@@ -9,7 +9,7 @@
 
 body {
   opacity: 0.9;
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/background.png");
   background-size: 100%;
   background-repeat: no-repeat;
   font-family: 'Shadows Into Light', cursive;
@@ -34,18 +34,22 @@ ul {
 #toDo span.glyphicon:hover {
   color: green;
   cursor: pointer;
+  font-size: 1.2em;
 }
 
 #toDo span.glyphicon {
   color: red;
   cursor: pointer;
+  font-size: 1em;
 }
 
 #complete span.glyphicon:hover {
   color: red;
   cursor: pointer;
+  font-size: 1.2em;
 }
 
 #complete span.glyphicon {
   color: green;
+  font-size: 1em;
 }
