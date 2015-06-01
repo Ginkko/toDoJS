@@ -9,6 +9,7 @@ $( document ).ready(function() {
     event.preventDefault();
 
     var name = $("input#name").val();
+    $("input#name").val('');
     var newTask = {name: name, isComplete: false}
     tasks.push(newTask);
     displayTasks();
