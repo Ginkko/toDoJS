@@ -1,5 +1,5 @@
 var tasks = [];
-
+var index = 0;
 //jQuery
 
 
@@ -15,19 +15,25 @@ $( document ).ready(function() {
     displayTasks();
   });
 
+  $("ul#toDo").on('click', '.glyphicon-ok', function() {
+    index = $(this).attr("id");
+    tasks[index].isComplete = true;
+    displayTasks();
+  });
+
 
   var displayTasks = function() {
     $("ul#complete").empty();
     $("ul#toDo").empty();
-    tasks.forEach(function(task) {
-
-      var li = "<li>" + task.name + "</li>"
+    for (var i = 0; i < tasks.length; i++) {
+      var task = tasks[i];
+      var li = "<li>" + "<span id='" + i + "' class='glyphicon glyphicon-ok' aria-hidden='true'></span>" + " "+ task.name + "</li>"
       if (task.isComplete) {
         $("ul#complete").append(li);
       } else {
         $("ul#toDo").append(li);
       }
-    });
+    };
   };
 
 

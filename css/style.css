@@ -20,3 +20,16 @@ h1 {
   position: absolute;
   bottom: 90px;
 }
+
+ul {
+  list-style-type: none;
+}
+
+#toDo span.glyphicon:hover {
+  color: green;
+  cursor: pointer;
+}
+
+#complete span.glyphicon {
+  color: green;
+}
