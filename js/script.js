@@ -21,6 +21,11 @@ $( document ).ready(function() {
     displayTasks();
   });
 
+  $("ul#complete").on('click', '.glyphicon-ok', function() {
+    index = $(this).attr("id");
+    tasks[index].isComplete = false;
+    displayTasks();
+  });
 
   var displayTasks = function() {
     $("ul#complete").empty();

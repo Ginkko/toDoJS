@@ -3,11 +3,17 @@
   color: white;
 }
 
-/*body {
+.jumbotron {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+body {
+  opacity: 0.9;
   background-image: url("../img/background.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-}*/
+  font-family: 'Shadows Into Light', cursive;
+}
 
 h1 {
   padding-bottom: 9px;
@@ -27,6 +33,16 @@ ul {
 
 #toDo span.glyphicon:hover {
   color: green;
+  cursor: pointer;
+}
+
+#toDo span.glyphicon {
+  color: red;
+  cursor: pointer;
+}
+
+#complete span.glyphicon:hover {
+  color: red;
   cursor: pointer;
 }
 
